@@ -1,4 +1,4 @@
-# Simple PWA
+# Simple PWA boilerplate
 
 *Développer une une page Web installable*
 
