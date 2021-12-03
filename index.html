@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" href="/favicon.ico">
+		<title>DWSapp.io</title>
+
+		<!-- [SEO] Meta description and keywords -->
+		<meta name="Description" content="Julien Noyer, Consultant & formateur en systèmes et logiciels informatiques, spécialisé en developpement Full Stack Javascript">
+		<meta name="keywords" content="teacher, data, api, pwa, javascript">
+
+		<!-- [SEO] Meta for RS -->
+		<meta property="og:locale" content="fr_FR"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Julien Noyer, Consultant & formateur en systèmes et logiciels informatiques, spécialisé en developpement Full Stack Javascript"/>
+		<meta property="og:description" content="Julien Noyer, Consultant & formateur en systèmes et logiciels informatiques, spécialisé en developpement Full Stack Javascript"/>
+		<meta property="og:url" content="https://dwsapp.io/"/>
+		<meta property="og:site_name" content="DWSapp.io"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Julien Noyer, Consultant & formateur en systèmes et logiciels informatiques, spécialisé en developpement Full Stack Javascript"/>
+		<meta name="twitter:title" content="Julien Noyer, Consultant & formateur en systèmes et logiciels informatiques, spécialisé en developpement Full Stack Javascript"/>
+		<meta name="twitter:image" content="/img/icon-192x192.png"/>
+
+		<!-- [PWA] Setup basic value -->
+		<link rel="manifest" href="/manifest.json">
+		<meta name="theme-color" content="#1a1c1d">
+		<link rel="mask-icon" href="/img/icon-32x32.png" color="#1a1c1d">
+		<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="128x128" href="/img/icon-128x128.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32x32.png">
+
+		<!-- [PWA] Setup Microsft specifics -->
+		<meta name="msapplication-navbutton-color" content="#000000">
+		<meta name="msapplication-starturl" content="/index.html">
+		<meta name="msapplication-TileImage" content="/img/icon-144x144.png">
+		<meta name="msapplication-TileColor" content="#427cac">
+		
+		<!-- [PWA] Setup Apple specifics -->
+		<link rel="apple-touch-icon" href="/img/icon-152x152.png">
+		<meta name="apple-mobile-web-app-title" content="DWSapp.io">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#1a1c1d">
+
+		<!-- Add page style -->
+		<link rel="stylesheet" href="/css/style.css">
+
+		<script>
+			// Setup Service Worker
+			if ("serviceWorker" in navigator) {
+				if (navigator.serviceWorker.controller) { console.log("[DWSapp.io] Service Worker actif") } 
+				else {
+					navigator.serviceWorker
+					.register("./dws-sw.js", { scope: "./" })
+					.then((reg) => { console.log("[DWSapp.io] Service Worker activé : " + reg.scope) });
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<figure>
+			<img src="/img/icon-192x192.png" alt="Logo dwsapp.io">
+			<figcaption><b>Simple PWA boiler plate</b> by <a href="https://dwsapp.io" target="_blank">dwsapp.io</a></figcaption>
+		</figure>
+	</body>
+</html>

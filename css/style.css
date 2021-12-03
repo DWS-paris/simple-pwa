@@ -1,0 +1,37 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+a{
+    color: #427cac;
+}
+
+figure{
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    margin: auto;
+}
+
+figcaption{
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: gray;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+    width: 100vw;
+    padding: 1rem;
+}
